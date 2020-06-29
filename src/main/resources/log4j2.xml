@@ -5,14 +5,14 @@
 			<PatternLayout
 				pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
 		</Console>
-		<File name="LogToFile" fileName="/tmp/logs/avaliacao-spring-boot.log">
+		<File name="LogToFile" fileName="/tmp/logs/ms-bancopa-api.log">
 			<PatternLayout>
 				<Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
 			</PatternLayout>
 		</File>
 	</Appenders>
 	<Loggers>
-		<Logger name="br.com.tokiomarine.seguradora.avaliacao" level="debug"
+		<Logger name="br.com.bancopan.api" level="debug"
 			additivity="false">
 			<AppenderRef ref="LogToFile" />
 			<AppenderRef ref="LogToConsole" />
